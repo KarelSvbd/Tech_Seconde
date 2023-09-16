@@ -2,16 +2,16 @@
 
 ### Introduction 
 
+[Vidéo de documentation](https://www.youtube.com/watch?v=pOOIiBQ5Hjs)
+
 Si l'on connecte deux switch entre eux, les vlan seront partagé tant que le port qui les connecte est dans la même vlan. Par conséquent un ordinateur étant dans le vlan 1 du routeur 1 pourra accéder, à un ordinateur qui est connecté à un routeur 2 tant que ce dernier se trouve dans la même vlan que lui, le 1. Le cable croisé qui connecte des deux switchs doit égalment être connecté à un port de vlan 1.
 Cependant, il est possible de connecter deux vlan par un seul cable croisé entre deux switch, voilà l'utilité des trunk.
-
-[Vidéo de documentation](https://www.youtube.com/watch?v=pOOIiBQ5Hjs)
 
 ### Liste des commandes
 
 Note : Aller dans le fichier [Vlan.md](./Vlan.md) pour connaitre la marche à suivre pour gérer les Vlan.
 
-##### Configuration finale
+##### Configuration
 ![Vlan Diagramme](../Ressources/img/TrunkDiag.png)
 
 ##### Commandes

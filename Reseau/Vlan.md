@@ -11,7 +11,7 @@ La touche __?__ est l'équivalent du help, et peut servir pour afficher la liste
 
 ### Liste des commandes
 
-##### Configuration finale
+##### Configuration
 ![Vlan Diagramme](../Ressources/img/VlanDiag.png)
 
 ##### Commandes
