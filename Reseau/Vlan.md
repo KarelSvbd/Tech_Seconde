@@ -11,6 +11,10 @@ La touche __?__ est l'équivalent du help, et peut servir pour afficher la liste
 
 ### Liste des commandes
 
+##### Configuration finale
+![Vlan Diagramme](../Ressources/img/VlanDiag.png)
+
+##### Commandes
 1. Mettre les IP dans le même réseau 
    - Ex : pc 1 -> 192.168.1.100 / pc 2 -> 192.168.1.101
 
@@ -23,17 +27,18 @@ La touche __?__ est l'équivalent du help, et peut servir pour afficher la liste
 show vlan
 ```
 
-4. Creation de Vlan
+1. Creation de Vlan
     - Dans le switch
 ```sh
 en
 conf t
-vlan 10 <numero vlan>
+vlan <numero vlan>
 # Optionel, donner un nom
 name <nom>
+exit
 ```
 
-5. Ajout des ports dans un vlan
+1. Ajout des ports dans un vlan (permet notamment à se connecter au switch à distance)
     - Dans un switch
 ```sh
 en
@@ -48,7 +53,7 @@ interface range fastethernet 0/<premier port>-<dernier port>
 # Ex : interface range fastethernet 0/1-20
 
 switchport access vlan <numero vlan>
-
+exit
 ```
 
 6. Configuration de l'adresse IP de la vlan
@@ -62,6 +67,7 @@ interface vlan <numero de la vlan>
 # Changement de l'addresse IP de la vlan
 ip address 192.168.99.2
 no shut
+exit
 ```
 
 ---
