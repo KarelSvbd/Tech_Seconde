@@ -51,7 +51,7 @@ no shutdown
 en
 conf t
 
-# Configuration du routeur A
+# Configuration du routeur B
 interface <nom interface> <numéro port>
 # Ex : interface fastEthernet 0/1
 
@@ -76,12 +76,12 @@ no shutdown
 
 À présent si l'on essaye de faire un ping entre le PC1 et le PC4, il va nous renvoyé "Destination Host unreachable". Il faut donc créer la route.
 
-3. Configuration de la route sur Switch A
+3. Configuration de la route sur Routeur A
 
 ```sh
-# Sur Routeur_B
+# Sur Routeur_A
 en
-# Affichage des routes d'un switch
+# Affichage des routes d'un routeur
 show ip route
 
 conf t
@@ -93,12 +93,12 @@ ip route <réseau de destination> <masque de sous réseau du réseau de destinat
 exit
 ```
 
-3. Configuration de la route sur Switch B
+3. Configuration de la route sur Routeur B
 
 ```sh
 # Sur Routeur_B
 en
-# Affichage des routes d'un switch
+# Affichage des routes d'un routeur
 show ip route
 
 conf t
