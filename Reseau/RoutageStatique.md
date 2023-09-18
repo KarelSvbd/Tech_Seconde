@@ -28,7 +28,7 @@ interface <nom interface> <numéro port>
 
 # Configuration de l'adresse IP du routeur
 ip address <adresse IP> <masque de sous réseau>
-# Ex : ip address <192.168.1.50> <255.255.255.0>
+# Ex : ip address 192.168.1.50 255.255.255.0
 
 no shutdown
 
@@ -40,7 +40,7 @@ interface nom interface> <numéro port>
 
 # Configuration de l'adresse IP du routeur
 ip address <adresse IP> <masque de sous réseau>
-# Ex : ip address <10.0.0.1> <255.255.255.252>
+# Ex : ip address 10.0.0.1 255.255.255.252
 
 no shutdown
 ```
@@ -57,7 +57,7 @@ interface <nom interface> <numéro port>
 
 # Configuration de l'adresse IP du routeur
 ip address <adresse IP> <masque de sous réseau>
-# Ex : ip address <192.168.1.50> <255.255.255.0>
+# Ex : ip address 192.168.2.50 255.255.255.0
 
 no shutdown
 
@@ -69,7 +69,7 @@ interface nom interface> <numéro port>
 
 # Configuration de l'adresse IP du routeur
 ip address <adresse IP> <masque de sous réseau>
-# Ex : ip address <10.0.0.1> <255.255.255.252>
+# Ex : ip address 10.0.0.2 255.255.255.252
 
 no shutdown
 ```
